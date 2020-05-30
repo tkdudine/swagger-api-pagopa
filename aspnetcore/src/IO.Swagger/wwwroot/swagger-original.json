@@ -9,11 +9,11 @@
     "url" : "http://civilianext.soluzionipa.it"
   } ],
   "paths" : {
-    "/portal/servizi/pagamenti/ws/10/tipi_dovuto" : {
-      "get" : {
+    "/portal/servizi/pagamenti/ws/10/stato_pagamenti" : {
+      "post" : {
         "description" : "Auto generated using Swagger Inspector",
         "parameters" : [ {
-          "name" : "application",
+          "name" : "applicazione",
           "in" : "query",
           "required" : false,
           "style" : "form",
@@ -22,10 +22,29 @@
             "type" : "string"
           },
           "example" : "pagamenti"
+        }, {
+          "name" : "iuv",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "720147896053757"
         } ],
         "responses" : {
           "200" : {
-            "description" : "Auto generated using Swagger Inspector"
+            "description" : "Auto generated using Swagger Inspector",
+            "content" : {
+              "application/json;charset=utf-8" : {
+                "schema" : {
+                  "type" : "string",
+                  "x-content-type" : "application/json;charset=utf-8"
+                },
+                "examples" : { }
+              }
+            }
           }
         },
         "servers" : [ {
