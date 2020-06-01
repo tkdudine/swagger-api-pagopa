@@ -32,14 +32,13 @@ namespace IO.Swagger.Controllers
         /// </summary>
         /// <remarks>Auto generated using Swagger Inspector</remarks>
         /// <param name="applicazione"></param>
-        /// <param name="iuv"></param>
         /// <response code="200">Auto generated using Swagger Inspector</response>
         [HttpPost]
         [Route("/portal/servizi/pagamenti/ws/10/stato_pagamenti")]
         [ValidateModelState]
         [SwaggerOperation("PortalServiziPagamentiWs10StatoPagamentiPost")]
         [SwaggerResponse(statusCode: 200, type: typeof(string), description: "Auto generated using Swagger Inspector")]
-        public virtual IActionResult PortalServiziPagamentiWs10StatoPagamentiPost([FromQuery]string applicazione, [FromQuery]string iuv)
+        public virtual IActionResult PortalServiziPagamentiWs10StatoPagamentiPost([FromQuery]string applicazione)
         { 
             //TODO: Uncomment the next line to return response 200 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(200, default(string));

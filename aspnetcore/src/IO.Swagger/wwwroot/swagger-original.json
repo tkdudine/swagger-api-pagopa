@@ -22,17 +22,21 @@
             "type" : "string"
           },
           "example" : "pagamenti"
-        }, {
-          "name" : "iuv",
-          "in" : "query",
-          "required" : false,
-          "style" : "form",
-          "explode" : true,
-          "schema" : {
-            "type" : "string"
-          },
-          "example" : "720147896053757"
         } ],
+        "requestBody" : {
+          "content" : {
+            "application/x-www-form-urlencoded" : {
+              "schema" : {
+                "type" : "string"
+              },
+              "examples" : {
+                "0" : {
+                  "value" : "iuv=720147896053757"
+                }
+              }
+            }
+          }
+        },
         "responses" : {
           "200" : {
             "description" : "Auto generated using Swagger Inspector",
